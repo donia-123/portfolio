@@ -3,44 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donia Abdallah - Home</title>
+    <title>Donia Abdallah - Portfolio</title>
     <style>
         body {
-            margin: 0; 
-            padding: 0; 
-            font-family: Arial, sans-serif; 
-            background: url('https://geeksforless.com/wp-content/uploads/2023/08/outsource-devops.jpg') no-repeat center center/cover;
-            height: 100vh;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
+            font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;
+            background: #f7f9fc;
+            scroll-behavior: smooth;
         }
-        h1 { font-size: 3em; margin: 0; }
-        p { font-size: 1.5em; margin: 10px 0; }
-        a {
-            display: inline-block; 
-            margin-top: 20px; 
-            padding: 10px 20px; 
-            background: #3498db; 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 5px;
+        header {
+            background: #2c3e50; color: #ecf0f1; padding: 40px 0; text-align: center;
+            animation: fadeInDown 1s ease-in-out;
         }
-        a:hover { background: #2980b9; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        header p { font-size: 1.2em; color: #bdc3c7; margin-top: 10px; }
+
+        .menu {
+            display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;
+            margin: 20px auto; max-width: 900px;
+        }
+        .menu a {
+            background: #2c3e50; /* نفس لون الهيدر */
+            color: white; padding: 12px 20px; border-radius: 6px;
+            text-decoration: none; transition: background 0.3s;
+        }
+        .menu a:hover { background: #34495e; }
+
+        /* زر الهوم */
+        .home-btn {
+            position: absolute; top: 20px; right: 20px;
+            background: #2c3e50; padding: 8px 15px; border-radius: 4px;
+            color: white; text-decoration: none;
+            transition: background 0.3s;
+        }
+        .home-btn:hover { background: #34495e; }
+
+        section {
+            padding: 20px; max-width: 900px; margin: 20px auto;
+            background: #2c3e50; color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 0.8s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        h2 { border-bottom: 2px solid rgba(255,255,255,0.6); padding-bottom: 5px; margin-bottom: 15px; }
+        ul { list-style: none; padding: 0; }
+        li { background: rgba(255,255,255,0.1); margin: 8px 0; padding: 10px; border-radius: 5px; }
+
+        footer {
+            background: #2c3e50; color: #ecf0f1; text-align: center; padding: 10px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        a { color: yellow; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
-<body> 
- <img src="https://github.com/donia-123/portfolio/blob/main/WhatsApp%20Image%202025-08-15%20at%2000.40.17_2378db67.jpg?raw=true" 
-     alt="Donia Abdallah" 
-     style="width:200px;height:auto;border-radius:50%;border:5px solid white;margin-bottom:15px;">
+<body>
+
+<!-- زرار الهوم يرجع للصفحة السابقة -->
+<a href="javascript:history.back()" class="home-btn">Home</a>
+
+<header id="home">
     <h1>Donia Abdallah Mohamed</h1>
     <p>DevOps Engineer & System Administrator</p>
-    <a href="page2.html">Enter Portfolio</a>
+</header>
+
+<!-- المربعات تحت الاسم -->
+<div class="menu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Motivated IT professional with expertise in Linux systems, Cloud Computing, and DevOps.
+       Skilled in managing servers, networks, automation, and cloud infrastructure.
+       Certified in RHCSA, with hands-on experience in virtualization, security, and cloud platforms.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>System Administration (Linux & Windows)</li>
+        <li>DevOps & Automation (Docker, Kubernetes, Ansible, Terraform)</li>
+        <li>Cloud (AWS, Huawei Cloud)</li>
+        <li>Networking & Security (CCNA, VPN, Firewalls)</li>
+        <li>Database (MySQL) & Programming (Python, Bash, C++)</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li><b>Dockerized Password Generator:</b> Custom Docker image for a password generator ensuring deployment efficiency.</li>
+        <li><b>User Management Tool (Bash):</b> Interactive script for managing users and groups.</li>
+        <li><b>Enterprise Network Design:</b> VLANs, OSPF, BGP setup using Cisco Packet Tracer.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:doniaabdallah03@gmail.com">doniaabdallah03@gmail.com</a></p>
+    <p>Phone: +20 1065462882</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/donia-abdallah-b14171204">linkedin.com/in/donia-abdallah</a></p>
+    <p>GitHub: <a href="https://github.com/donia-123">github.com/donia-123</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Donia Abdallah - All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
-
-
-
