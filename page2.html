@@ -9,14 +9,14 @@
       margin: 0;
       padding: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* الخلفية بالـ Palette */
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #ecf0f1;
       line-height: 1.6;
       scroll-behavior: smooth;
     }
 
     header {
-      background: rgba(15, 32, 39, 0.8); /* شبه شفاف */
+      background: rgba(15, 32, 39, 0.8);
       color: #ffffff;
       text-align: center;
       padding: 50px 20px;
@@ -25,7 +25,6 @@
     header h1 { margin: 0; font-size: 2.8em; color: #1abc9c; }
     header p { font-size: 1.2em; color: #ecf0f1; margin-top: 10px; }
 
-    /* زر الهوم */
     .home-btn {
       position: absolute;
       top: 20px;
@@ -56,19 +55,36 @@
       text-decoration: none;
       transition: 0.3s;
     }
-    .menu a:hover {
-      background: #16a085;
+    .menu a:hover { background: #16a085; }
+
+    /* تأثير Fade In */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
     }
 
     section {
       padding: 25px;
       max-width: 900px;
       margin: 25px auto;
-      background: rgba(0,0,0,0.55); /* شفاف غامق */
+      background: rgba(0,0,0,0.55);
       color: #ffffff;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
     }
+
+    /* تأخير متدرج لكل سكشن */
+    section:nth-of-type(1) { animation-delay: 0.2s; }
+    section:nth-of-type(2) { animation-delay: 0.4s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.8s; }
+    section:nth-of-type(5) { animation-delay: 1s; }
+    section:nth-of-type(6) { animation-delay: 1.2s; }
+    section:nth-of-type(7) { animation-delay: 1.4s; }
+    section:nth-of-type(8) { animation-delay: 1.6s; }
 
     h2 {
       border-bottom: 2px solid rgba(255,255,255,0.3);
@@ -93,16 +109,13 @@
       font-size: 0.9em;
     }
 
-    /* روابط صغيرة أنيقة */
     .small-link {
       font-size: 0.9em;
       margin-left: 6px;
       color: #1abc9c;
       text-decoration: none;
     }
-    .small-link:hover {
-      color: #16a085;
-    }
+    .small-link:hover { color: #16a085; }
 
     section a {
       color: #1abc9c;
@@ -116,7 +129,6 @@
 </head>
 <body>
 
-<!-- زرار الهوم -->
 <a href="page1.html" class="home-btn">&#x1F3E0;</a>
 
 <header id="home">
@@ -228,16 +240,12 @@
   </ul>
 </section>
 
- <section id="contact">
+<section id="contact">
   <h2>Contact</h2>
   <p>Email: <a href="mailto:doniaabdallah03@gmail.com">doniaabdallah03@gmail.com</a></p>
   <p>Phone: +20 1065462882</p>
-  <p>
-    LinkedIn: <a href="https://linkedin.com/in/donia-abdallah-b14171204" target="_blank">donia-abdallah</a>
-  </p>
-  <p>
-    GitHub: <a href="https://github.com/donia-123" target="_blank">donia-123</a>
-  </p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/donia-abdallah-b14171204" target="_blank">donia-abdallah</a></p>
+  <p>GitHub: <a href="https://github.com/donia-123" target="_blank">donia-123</a></p>
 </section>
 
 <footer>
