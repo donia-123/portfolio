@@ -1,206 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donia Abdallah - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;
-            background: #f7f9fc;
-            scroll-behavior: smooth;
-        }
-        header {
-            background: #2c3e50; color: #ecf0f1; padding: 40px 0; text-align: center;
-            animation: fadeInDown 1s ease-in-out;
-        }
-        header h1 { margin: 0; font-size: 2.5em; }
-        header p { font-size: 1.2em; color: #bdc3c7; margin-top: 10px; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donia Abdallah - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;
+      background: #f7f9fc;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #2c3e50; color: #ecf0f1; padding: 40px 0; text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { font-size: 1.2em; color: #bdc3c7; margin-top: 10px; }
 
-        .menu {
-            display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;
-            margin: 20px auto; max-width: 900px;
-        }
-        .menu a {
-            background: #2c3e50;
-            color: white; padding: 12px 20px; border-radius: 6px;
-            text-decoration: none; transition: background 0.3s;
-        }
-        .menu a:hover { background: #34495e; }
+    .menu {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;
+      margin: 20px auto; max-width: 900px;
+    }
+    .menu a {
+      background: #2c3e50;
+      color: white; padding: 12px 20px; border-radius: 6px;
+      text-decoration: none; transition: background 0.3s;
+    }
+    .menu a:hover { background: #34495e; }
 
-        /* زر الهوم كأيقونة بيت */
-        .home-btn {
-            position: absolute; top: 20px; right: 20px;
-            background: #2c3e50; padding: 10px 15px; border-radius: 50%;
-            color: white; text-decoration: none; font-size: 20px;
-            transition: background 0.3s;
-        }
-        .home-btn:hover { background: #34495e; }
+    .home-btn {
+      position: absolute; top: 20px; right: 20px;
+      background: #2c3e50; padding: 10px 15px; border-radius: 50%;
+      color: white; text-decoration: none; font-size: 20px;
+      transition: background 0.3s;
+    }
+    .home-btn:hover { background: #34495e; }
 
-        section {
-            padding: 20px; max-width: 900px; margin: 20px auto;
-            background: #2c3e50; color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            animation: fadeInUp 0.8s ease-in-out;
-        }
-        section:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            cursor: pointer;
-        }
-        h2 { border-bottom: 2px solid rgba(255,255,255,0.6); padding-bottom: 5px; margin-bottom: 15px; }
-        ul { list-style: none; padding: 0; }
-        li { background: rgba(255,255,255,0.1); margin: 8px 0; padding: 10px; border-radius: 5px; }
+    section {
+      padding: 20px; max-width: 900px; margin: 20px auto;
+      background: #2c3e50; color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeInUp 0.8s ease-in-out;
+    }
+    section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+    h2 { border-bottom: 2px solid rgba(255,255,255,0.6); padding-bottom: 5px; margin-bottom: 15px; }
+    ul { list-style: none; padding: 0; }
+    li { background: rgba(255,255,255,0.1); margin: 8px 0; padding: 10px; border-radius: 5px; }
 
-        footer {
-            background: #2c3e50; color: #ecf0f1; text-align: center; padding: 10px;
-            animation: fadeInUp 1s ease-in-out;
-        }
-        a { color: yellow; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+    footer {
+      background: #2c3e50; color: #ecf0f1; text-align: center; padding: 10px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    a { color: yellow; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
-<!-- زرار الهوم كأيقونة بيت -->
 <a href="page1.html" class="home-btn">&#x1F3E0;</a>
 
 <header id="home">
-    <h1>Donia Abdallah Mohamed</h1>
-    <p>DevOps Engineer & System Administrator</p>
+  <h1>Donia Abdallah Mohamed</h1>
+  <p>DevOps Engineer & System Administrator</p>
 </header>
 
 <div class="menu">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#internships">Internships</a>
-    <a href="#certificates">Certificates</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#internships">Internships</a>
+  <a href="#projects">Projects</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#offered-skills">Offered Skills</a>
+  <a href="#contact">Contact</a>
 </div>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p>Motivated IT professional with expertise in Linux systems, Cloud Computing, and DevOps.
-       Skilled in managing servers, networks, automation, and cloud infrastructure.
-       Certified in RHCSA, with hands-on experience in virtualization, security, and cloud platforms.</p>
+  <h2>About Me</h2>
+  <p>Motivated IT professional with expertise in Linux systems, Cloud Computing, and DevOps.
+     Skilled in managing servers, networks, automation, and cloud infrastructure.
+     Certified in RHCSA, with hands-on experience in virtualization, security, and cloud platforms.</p>
 </section>
-    
-    <section id="education">
-    <h2>Education</h2>
-    <ul>
-        <li><b>Bachelor’s Degree in Information Technology</b> – South Valley University</li>
-        <li>Faculty of Computers and Information Technology</li>
-        <li>GPA: B</li>
-        <li>Graduation Project: O-Nation – <b>Grade:</b> Excellent</li>
-    </ul>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><b>Bachelor’s Degree in Information Technology</b> – South Valley University</li>
+    <li>Faculty of Computers and Information Technology</li>
+    <li>GPA: B</li>
+    <li>Graduation Project: O-Nation – <b>Grade:</b> Excellent</li>
+  </ul>
 </section>
 
 <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>System Administration (Linux & Windows)</li>
-        <li>DevOps & Automation (Docker, Kubernetes, Ansible, Terraform)</li>
-        <li>Cloud (AWS, Huawei Cloud)</li>
-        <li>Networking & Security (CCNA, VPN, Firewalls)</li>
-        <li>Database (MySQL) & Programming (Python, Bash, C++)</li>
-    </ul>
+  <h2>Skills</h2>
+  <ul>
+    <li>System Administration (Linux & Windows)</li>
+    <li>DevOps & Automation (Docker, Kubernetes, Ansible, Terraform)</li>
+    <li>Cloud (AWS, Huawei Cloud)</li>
+    <li>Networking & Security (CCNA, VPN, Firewalls)</li>
+    <li>Database (MySQL) & Programming (Python, Bash, C++)</li>
+  </ul>
 </section>
 
 <section id="internships">
-    <h2>Internships</h2>
-    <ul>
-        <li><b>Digital Egypt Pioneers Initiative (DEPI)</b> – DevOps Engineer Internship</li>
-        <li><b>Intensive Code Camps (ICC)</b> – System Administration Track</li>
-        <li><b>Information Technology Institute (ITI)</b> – Windows Server Administration</li>
-        <li><b>Information Technology Institute (ITI)</b> – Cyber Security</li>
-        <li><b>National Telecommuting Institute</b> – CCNA</li>
-         
-    </ul>
-</section>
-    
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <b>Dockerized Password Generator (Docker):</b><br>
-            Dockerized a frontend password generator, creating a custom image for efficient deployment and environment isolation. 
-            <a href="https://hub.docker.com/r/doniaabdallah/password-generator" target="_blank">View Project</a>
-        </li>
-        <li>
-            <b>User Management Tool (Bash Scripting):</b><br>
-            Built a Bash script with an interactive menu for system administration tasks, enabling user and group management. The tool supports adding and deleting users or groups. 
-            <a href="https://github.com/donia-123/bash-project" target="_blank">View Project</a>
-        </li>
-        <li>
-            <b>Domain Environment Simulation Project (MCSA):</b><br>
-            Configured core IT services, designed and optimized domain structures, implemented Group Policies, secured branch communications, and deployed an RODC to enhance security, performance, and redundancy.
-            <a href="https://www.linkedin.com/posts/donia-abdallah-b14171204_win-server-project-activity-7285698924542128129-pGTl?utm_source=share&utm_medium=member_desktop&rcm=ACoAADP-UAABQlXo46-0fXmu-ErFB6W9oICTyXE" target="_blank">View Project</a>
-        </li>
-        <li>
-            <b>Enterprise Network Design and Simulation Project (CCNA):</b><br>
-            Designed and configured network topology using Cisco Packet Tracer. Integrated VLANs, OSPF, BGP, and other protocols for optimal performance. Ensured secure connectivity and efficient traffic management. Conducted testing, troubleshooting, and VPN simulations. 
-            <a href="https://www.linkedin.com/posts/donia-abdallah-b14171204_iti-ccna-communicationabrskills-activity-7276240310333026304-Wq7g?utm_source=share&utm_medium=member_desktop&rcm=ACoAADP-UAABQlXo46-0fXmu-ErFB6W9oICTyXE" target="_blank">View Project</a>
-        </li>
-        <li>
-            <b>O-Nation (Graduation Project):</b><br>
-            Developed a .NET backend for a cross-platform travel guide app, handling documents and procedures. Designed an optimized database (ERD) and built RESTful APIs for authentication and data management. Integrated Flutter for a seamless mobile and web experience. 
-            <a href="https://github.com/donia-123/O_NATION/tree/master/O_NATION" target="_blank">View Project</a>
-        </li>
-    </ul>
-</section>
-<section id="certificates">
-    <h2>Certificates</h2>
-    <ul>
-        <li>
-            Red Hat Certified System Administrator (RHCSA) – 
-            <a href="https://www.credly.com/badges/f28b63e0-4f15-43e4-9999-116afcdb903f/public_url" target="_blank">View Certificate</a>
-        </li>
-        <li>
-            Certificate of Language Proficiency (ELPT) – Equivalent to TOEFL – 
-            <a href="https://drive.google.com/file/d/1kdqsY_ZP51SXKyaDtFRcDC5u0b0NOFyZ/view " target="_blank">View Certificate</a>
-        </li>
-        <li>
-            AWS Academy Cloud Foundations – 
-            <a href="https://www.credly.com/badges/5ad39582-0515-4482-be0b-94bac6c168b3/public_url" target="_blank">View Certificate</a>
-        </li>
-        <li>
-            Cybersecurity Bootcamp – Cyber Talents – 
-            <a href="https://drive.google.com/drive/folders/16Ev45TzMcr1hwDy4CFAhW-mo8GRXzTVV" target="_blank">View Certificate</a>
-        </li>
-        <li>
-            Cisco Certified Network Associate (CCNA) – 
-            <a href="https://drive.google.com/drive/folders/1yB7_SnjeKK1TCm-Ywfyscga7v1r4VWBm" target="_blank">View Certificate</a>
-        </li>
-    </ul>
+  <h2>Internships</h2>
+  <ul>
+    <li><b>Digital Egypt Pioneers Initiative (DEPI)</b> – DevOps Engineer Internship</li>
+    <li><b>Intensive Code Camps (ICC)</b> – System Administration Track</li>
+    <li><b>Information Technology Institute (ITI)</b> – Windows Server Administration</li>
+    <li><b>Information Technology Institute (ITI)</b> – Cyber Security</li>
+    <li><b>National Telecommuting Institute</b> – CCNA</li>
+  </ul>
 </section>
 
+<!-- ✅ Projects moved before Certificates -->
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><b>Dockerized Password Generator (Docker):</b> Dockerized a frontend password generator. 
+      <a href="https://hub.docker.com/r/doniaabdallah/password-generator" target="_blank">View</a></li>
+    <li><b>User Management Tool (Bash):</b> Built a Bash script for user/group management. 
+      <a href="https://github.com/donia-123/bash-project" target="_blank">View</a></li>
+    <li><b>Domain Environment Simulation Project (MCSA):</b> Configured core IT services. 
+      <a href="https://www.linkedin.com/posts/donia-abdallah-b14171204_win-server-project-activity-7285698924542128129-pGTl" target="_blank">View</a></li>
+    <li><b>Enterprise Network Design (CCNA):</b> Designed and configured network topology. 
+      <a href="https://www.linkedin.com/posts/donia-abdallah-b14171204_iti-ccna-communicationabrskills-activity-7276240310333026304-Wq7g" target="_blank">View</a></li>
+    <li><b>O-Nation (Graduation Project):</b> Developed a .NET backend for a cross-platform travel guide app. 
+      <a href="https://github.com/donia-123/O_NATION/tree/master/O_NATION" target="_blank">View</a></li>
+  </ul>
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <ul>
+    <li>Red Hat Certified System Administrator (RHCSA) – 
+      <a href="https://www.credly.com/badges/f28b63e0-4f15-43e4-9999-116afcdb903f/public_url" target="_blank">View</a></li>
+    <li>Certificate of Language Proficiency (ELPT) – TOEFL Equivalent – 
+      <a href="https://drive.google.com/file/d/1kdqsY_ZP51SXKyaDtFRcDC5u0b0NOFyZ/view" target="_blank">View</a></li>
+    <li>AWS Academy Cloud Foundations – 
+      <a href="https://www.credly.com/badges/5ad39582-0515-4482-be0b-94bac6c168b3/public_url" target="_blank">View</a></li>
+    <li>Cybersecurity Bootcamp – Cyber Talents – 
+      <a href="https://drive.google.com/drive/folders/16Ev45TzMcr1hwDy4CFAhW-mo8GRXzTVV" target="_blank">View</a></li>
+    <li>Cisco Certified Network Associate (CCNA) – 
+      <a href="https://drive.google.com/drive/folders/1yB7_SnjeKK1TCm-Ywfyscga7v1r4VWBm" target="_blank">View</a></li>
+  </ul>
+</section>
+
+<section id="offered-skills">
+  <h2>Offered Skills</h2>
+  <ul>
+    <li>Linux and Windows server administration</li>
+    <li>Automated deployment & Infrastructure as Code (Ansible, Terraform)</li>
+    <li>Containerized environments with Docker and Kubernetes</li>
+    <li>Cloud solutions design & management (AWS, Huawei Cloud)</li>
+    <li>Network configuration, routing & security implementation</li>
+    <li>Database administration & performance optimization (MySQL)</li>
+    <li>CI/CD pipeline setup & monitoring</li>
+    <li>Scripting & automation using Python and Bash</li>
+  </ul>
+</section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:doniaabdallah03@gmail.com">doniaabdallah03@gmail.com</a></p>
-    <p>Phone: +20 1065462882</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/donia-abdallah-b14171204">linkedin.com/in/donia-abdallah</a></p>
-    <p>GitHub: <a href="https://github.com/donia-123">github.com/donia-123</a></p>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:doniaabdallah03@gmail.com">doniaabdallah03@gmail.com</a></p>
+  <p>Phone: +20 1065462882</p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/donia-abdallah-b14171204">linkedin.com/in/donia-abdallah</a></p>
+  <p>GitHub: <a href="https://github.com/donia-123">github.com/donia-123</a></p>
 </section>
 
 <footer>
-    <p>© 2025 Donia Abdallah - All Rights Reserved</p>
+  <p>© 2025 Donia Abdallah - All Rights Reserved</p>
 </footer>
 
 </body>
 </html>
-
