@@ -9,8 +9,8 @@
       margin: 0;
       padding: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1a1a2e, #16213e);
-      color: #f5f6fa;
+      background: #f7f9fc;
+      color: #2c3e50;
       line-height: 1.6;
       scroll-behavior: smooth;
     }
@@ -33,41 +33,35 @@
       max-width: 900px;
     }
     .menu a {
-      background: rgba(255, 255, 255, 0.08);
-      color: #f5f6fa;
-      padding: 12px 20px;
+      background: #2c3e50;
+      color: #fff;
+      padding: 10px 18px;
       border-radius: 6px;
       text-decoration: none;
-      transition: background 0.3s ease, transform 0.2s;
+      transition: background 0.3s ease;
     }
     .menu a:hover {
-      background: rgba(0, 168, 255, 0.7);
-      transform: translateY(-3px);
+      background: #34495e;
     }
 
     section {
       padding: 25px;
       max-width: 900px;
       margin: 25px auto;
-      background: rgba(255, 255, 255, 0.05);
+      background: #ffffff;
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    section:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     h2 {
-      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
       margin-bottom: 15px;
-      color: #00a8ff;
+      color: #2c3e50;
     }
     ul { list-style: none; padding: 0; }
     li {
-      background: rgba(255, 255, 255, 0.08);
+      background: #f2f4f7;
       margin: 8px 0;
       padding: 10px;
       border-radius: 6px;
@@ -76,26 +70,21 @@
     footer {
       text-align: center;
       padding: 15px;
-      background: rgba(255, 255, 255, 0.05);
+      background: #2c3e50;
+      color: #ecf0f1;
       margin-top: 30px;
-      color: #dcdde1;
       font-size: 0.9em;
     }
 
-    /* Buttons for links */
-    .btn-link {
-      display: inline-block;
-      margin: 5px 5px;
-      padding: 8px 15px;
-      border-radius: 6px;
-      background: rgba(0, 168, 255, 0.7);
-      color: white;
-      font-weight: bold;
+    /* روابط صغيرة جنب البروجكت والشهادات */
+    .small-link {
+      font-size: 0.9em;
+      margin-left: 8px;
+      color: #2980b9;
       text-decoration: none;
-      transition: 0.3s;
     }
-    .btn-link:hover {
-      background: #0097e6;
+    .small-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -158,29 +147,24 @@
   <h2>Projects</h2>
   <ul>
     <li>
-      <b>Dockerized Password Generator (Docker):</b><br>
-      Dockerized a frontend password generator, creating a custom image for efficient deployment and environment isolation. 
-      <a href="https://hub.docker.com/r/doniaabdallah/password-generator" target="_blank" class="btn-link">View Project</a>
+      <b>Dockerized Password Generator (Docker):</b> Dockerized a frontend password generator. 
+      <a href="https://hub.docker.com/r/doniaabdallah/password-generator" target="_blank" class="small-link">🔗</a>
     </li>
     <li>
-      <b>User Management Tool (Bash Scripting):</b><br>
-      Built a Bash script with an interactive menu for system administration tasks, enabling user and group management. 
-      <a href="https://github.com/donia-123/bash-project" target="_blank" class="btn-link">View Project</a>
+      <b>User Management Tool (Bash Scripting):</b> Built a Bash script for system administration tasks. 
+      <a href="https://github.com/donia-123/bash-project" target="_blank" class="small-link">🔗</a>
     </li>
     <li>
-      <b>Domain Environment Simulation Project (MCSA):</b><br>
-      Configured core IT services, designed and optimized domain structures, implemented Group Policies, and deployed an RODC. 
-      <a href="https://www.linkedin.com/posts/donia-abdallah-b14171204_win-server-project-activity-7285698924542128129-pGTl" target="_blank" class="btn-link">View Project</a>
+      <b>Domain Environment Simulation Project (MCSA):</b> Configured core IT services and policies. 
+      <a href="https://www.linkedin.com/posts/donia-abdallah-b14171204_win-server-project-activity-7285698924542128129-pGTl" target="_blank" class="small-link">🔗</a>
     </li>
     <li>
-      <b>Enterprise Network Design (CCNA):</b><br>
-      Designed and configured network topology using Cisco Packet Tracer with VLANs, OSPF, BGP, VPN simulations. 
-      <a href="https://www.linkedin.com/posts/donia-abdallah-b14171204_iti-ccna-communicationabrskills-activity-7276240310333026304-Wq7g" target="_blank" class="btn-link">View Project</a>
+      <b>Enterprise Network Design (CCNA):</b> Designed and configured network topology with VLANs, OSPF, BGP. 
+      <a href="https://www.linkedin.com/posts/donia-abdallah-b14171204_iti-ccna-communicationabrskills-activity-7276240310333026304-Wq7g" target="_blank" class="small-link">🔗</a>
     </li>
     <li>
-      <b>O-Nation (Graduation Project):</b><br>
-      Developed a .NET backend for a cross-platform travel guide app, built RESTful APIs, and integrated Flutter frontend. 
-      <a href="https://github.com/donia-123/O_NATION/tree/master/O_NATION" target="_blank" class="btn-link">View Project</a>
+      <b>O-Nation (Graduation Project):</b> Developed a .NET backend + RESTful APIs + Flutter frontend. 
+      <a href="https://github.com/donia-123/O_NATION/tree/master/O_NATION" target="_blank" class="small-link">🔗</a>
     </li>
   </ul>
 </section>
@@ -189,24 +173,24 @@
   <h2>Certificates</h2>
   <ul>
     <li>
-      Red Hat Certified System Administrator (RHCSA) – 
-      <a href="https://www.credly.com/badges/f28b63e0-4f15-43e4-9999-116afcdb903f/public_url" target="_blank" class="btn-link">View</a>
+      Red Hat Certified System Administrator (RHCSA) 
+      <a href="https://www.credly.com/badges/f28b63e0-4f15-43e4-9999-116afcdb903f/public_url" target="_blank" class="small-link">🔗</a>
     </li>
     <li>
-      Certificate of Language Proficiency (ELPT) – Equivalent to TOEFL – 
-      <a href="https://drive.google.com/file/d/1kdqsY_ZP51SXKyaDtFRcDC5u0b0NOFyZ/view" target="_blank" class="btn-link">View</a>
+      Certificate of Language Proficiency (ELPT) – Equivalent to TOEFL 
+      <a href="https://drive.google.com/file/d/1kdqsY_ZP51SXKyaDtFRcDC5u0b0NOFyZ/view" target="_blank" class="small-link">🔗</a>
     </li>
     <li>
-      AWS Academy Cloud Foundations – 
-      <a href="https://www.credly.com/badges/5ad39582-0515-4482-be0b-94bac6c168b3/public_url" target="_blank" class="btn-link">View</a>
+      AWS Academy Cloud Foundations 
+      <a href="https://www.credly.com/badges/5ad39582-0515-4482-be0b-94bac6c168b3/public_url" target="_blank" class="small-link">🔗</a>
     </li>
     <li>
-      Cybersecurity Bootcamp – Cyber Talents – 
-      <a href="https://drive.google.com/drive/folders/16Ev45TzMcr1hwDy4CFAhW-mo8GRXzTVV" target="_blank" class="btn-link">View</a>
+      Cybersecurity Bootcamp – Cyber Talents 
+      <a href="https://drive.google.com/drive/folders/16Ev45TzMcr1hwDy4CFAhW-mo8GRXzTVV" target="_blank" class="small-link">🔗</a>
     </li>
     <li>
-      Cisco Certified Network Associate (CCNA) – 
-      <a href="https://drive.google.com/drive/folders/1yB7_SnjeKK1TCm-Ywfyscga7v1r4VWBm" target="_blank" class="btn-link">View</a>
+      Cisco Certified Network Associate (CCNA) 
+      <a href="https://drive.google.com/drive/folders/1yB7_SnjeKK1TCm-Ywfyscga7v1r4VWBm" target="_blank" class="small-link">🔗</a>
     </li>
   </ul>
 </section>
@@ -229,10 +213,8 @@
   <h2>Contact</h2>
   <p>Email: <a href="mailto:doniaabdallah03@gmail.com">doniaabdallah03@gmail.com</a></p>
   <p>Phone: +20 1065462882</p>
-  <div>
-    <a href="https://linkedin.com/in/donia-abdallah-b14171204" target="_blank" class="btn-link">LinkedIn</a>
-    <a href="https://github.com/donia-123" target="_blank" class="btn-link">GitHub</a>
-  </div>
+  <p>LinkedIn: <a href="https://linkedin.com/in/donia-abdallah-b14171204" target="_blank">donia-abdallah</a></p>
+  <p>GitHub: <a href="https://github.com/donia-123" target="_blank">donia-123</a></p>
 </section>
 
 <footer>
