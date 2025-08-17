@@ -1,45 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donia Abdallah - Home</title>
-    <style>
-        body {
-            margin: 0; 
-            padding: 0; 
-            font-family: Arial, sans-serif; 
-            background: url('https://geeksforless.com/wp-content/uploads/2023/08/outsource-devops.jpg') no-repeat center center/cover;
-            height: 100vh;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-        }
-        h1 { font-size: 3em; margin: 0; }
-        p { font-size: 1.5em; margin: 10px 0; }
-        a {
-            display: inline-block; 
-            margin-top: 20px; 
-            padding: 10px 20px; 
-            background: #3498db; 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 5px;
-        }
-        a:hover { background: #2980b9; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donia Abdallah - Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: url('https://geeksforless.com/wp-content/uploads/2023/08/outsource-devops.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* طبقة شفافة فوق الخلفية */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+
+    img {
+      width: 180px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-bottom: 20px;
+      animation: fadeIn 1.2s ease-in-out;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      font-weight: bold;
+      animation: slideDown 1.2s ease-in-out;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.4em;
+      margin: 15px 0;
+      color: #ddd;
+      animation: slideUp 1.2s ease-in-out;
+      z-index: 1;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: linear-gradient(45deg, #3498db, #2c3e50);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      animation: fadeIn 1.5s ease-in-out;
+      z-index: 1;
+    }
+
+    a:hover {
+      background: linear-gradient(45deg, #2980b9, #1c2833);
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body> 
- <img src="https://github.com/donia-123/portfolio/blob/main/WhatsApp%20Image%202025-08-15%20at%2000.40.17_2378db67.jpg?raw=true" 
-     alt="Donia Abdallah" 
-     style="width:200px;height:auto;border-radius:50%;border:5px solid white;margin-bottom:15px;">
-    <h1>Donia Abdallah Mohamed</h1>
-    <p>DevOps Engineer & System Administrator</p>
-    <a href="page2.html">Enter Portfolio</a>
+<body>
+  <img src="https://github.com/donia-123/portfolio/blob/main/WhatsApp%20Image%202025-08-15%20at%2000.40.17_2378db67.jpg?raw=true" 
+       alt="Donia Abdallah">
+
+  <h1>Donia Abdallah Mohamed</h1>
+  <p>DevOps Engineer & System Administrator</p>
+  <a href="page2.html">Enter Portfolio</a>
 </body>
 </html>
-
-
