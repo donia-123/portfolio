@@ -24,6 +24,21 @@
     header h1 { margin: 0; font-size: 2.5em; }
     header p { font-size: 1.2em; color: #bdc3c7; margin-top: 10px; }
 
+    /* زر الهوم */
+    .home-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #2c3e50;
+      padding: 10px 15px;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      transition: background 0.3s;
+    }
+    .home-btn:hover { background: #34495e; }
+
     .menu {
       display: flex;
       justify-content: center;
@@ -48,20 +63,21 @@
       padding: 25px;
       max-width: 900px;
       margin: 25px auto;
-      background: #ffffff;
+      background: #2c3e50;   /* رجعت الخلفية الغامقة زي كل السكاشن */
+      color: white;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     h2 {
-      border-bottom: 2px solid #ccc;
+      border-bottom: 2px solid rgba(255,255,255,0.4);
       padding-bottom: 5px;
       margin-bottom: 15px;
-      color: #2c3e50;
+      color: #ecf0f1;
     }
     ul { list-style: none; padding: 0; }
     li {
-      background: #f2f4f7;
+      background: rgba(255,255,255,0.1);
       margin: 8px 0;
       padding: 10px;
       border-radius: 6px;
@@ -76,11 +92,10 @@
       font-size: 0.9em;
     }
 
-    /* روابط صغيرة جنب البروجكت والشهادات */
     .small-link {
       font-size: 0.9em;
       margin-left: 8px;
-      color: #2980b9;
+      color: yellow;
       text-decoration: none;
     }
     .small-link:hover {
@@ -89,6 +104,9 @@
   </style>
 </head>
 <body>
+
+<!-- زرار الهوم -->
+<a href="page1.html" class="home-btn">&#x1F3E0;</a>
 
 <header id="home">
   <h1>Donia Abdallah Mohamed</h1>
